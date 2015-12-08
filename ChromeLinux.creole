@@ -1,3 +1,7 @@
+**NOTE**: Recent versions of Google Chrome and Chromium seem to have made some changes that make the below procedure no longer work.
+
+Since Google Chrome does not officially support certificates on smart cards, this may be an issue that cannot be fixed. If we find a solution, we will update this page accordingly; in the mean time, please use Firefox instead.
+
 = How to enable the eID on Chrome (Linux) =
 
 For SSL certificate managment, Google Chrome on Linux uses NSS. No UI is provided to install PKCS11 modules. NSS-tools come to help here.
