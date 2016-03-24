@@ -48,3 +48,13 @@ More information:
   * eid-applet (http://code.google.com/p/eid-applet/)
   * Identifcation and authentication: eid-idp (http://code.google.com/p/eid-idp)
   * Digital signatures: eid-dss (http://code.google.com/p/eid-dss)
+
+== Test environment ==
+
+There is a debugging environment that allows you to:
+
+* Create virtual cards to return data which is not the same as the data on the card
+* Change the signing algorithm to SHA256
+* Perform certificate status checks against a live (local) OCSP server.
+
+The debugging environment consists of two parts: a virtual card tool, and a docker image for the OCSP part and the resigning. For the latter, more information can be found at the [https://hub.docker.com/r/fedict/eid-test-ca/ docker hub]; a download site for the former will be added shortly.
