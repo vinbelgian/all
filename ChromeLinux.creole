@@ -1,6 +1,4 @@
-**NOTE**: Recent versions of Google Chrome and Chromium seem to have made some changes that make the below procedure no longer work.
-
-Since Google Chrome does not officially support certificates on smart cards, this may be an issue that cannot be fixed. If we find a solution, we will update this page accordingly; in the mean time, please use Firefox instead.
+**NOTE**: Recent versions of Google Chrome and Chromium seem to have made some changes that make the below procedure no longer work. For more details, see [[issue#9|https://github.com/Fedict/eid-mw/issues/9]].
 
 = How to enable the eID on Chrome (Linux) =
 
