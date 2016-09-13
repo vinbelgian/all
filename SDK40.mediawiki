@@ -5,27 +5,24 @@ Version 4.0 of the eID Middleware (the eID Middleware contains libraries used by
 
 = Details =
 
-==Downloads==
+==Getting the SDK==
 
-Please check the [http://code.google.com/p/eid-mw/downloads/list download section] for the latest releases
+The eID Middleware 4.1 has been released and can be found here:<BR>
+[http://eid.belgium.be/en/using_your_eid/installing_the_eid_software]<BR>
 
-The Eid Middleware 4.0 has been released and can be found here:<BR>
-[http://eid.belgium.be/nl/Hoe_installeer_je_de_eID/]<BR>
-
-The 4.0 Eid Sdk can be found here:<BR>
-http://eid-mw.googlecode.com/files/sdk40_1306.zip
-
+The 4.1 eID SDK can be found inside the eID middleware source tree:<BR>
+[https://github.com/Fedict/eid-mw/tree/master/doc/sdk]<BR>
 
 ==Content==
 
-This 4.0 eidmw SDK will break radically with the older 2.x and 3.5 SDK API's.<BR>
+This 4.1 eidmw SDK will break radically with the older 2.x and 3.5 SDK API's.<BR>
 We will no longer define our own API, but in fact use the cryptografic token interface standard PKCS#11 v2.11 API.<BR>
-The PKCS#11 v2.11 specification can be found at [http://www.rsa.com/rsalabs/node.asp?id=2133 RSA ]
+The PKCS#11 v2.11 specification can be found inside the "documentation" folder in the SDK directory, the file [https://github.com/Fedict/eid-mw/blob/master/doc/sdk/documentation/pkcs-11v2-11r1.pdf pkcs-11v2-11r1.pdf]
 
 The PKCS#11 v2.11 API will allow you to check for detected cardreaders and card and will allow to retrieve data from the card (either as full files and certificates, or parsed data within these files e.g. first name), sign data with the card,.. .
 
 Samples on how to use the new API will be provided in the SDK.<BR>
-Some can be found already in our source section at [https://code.google.com/p/eid-mw/source/browse/#svn%2Ftrunk%2Fdoc%2Fsdk%2Fexamples trunk/doc/sdk/examples]
+Some can be found already in our source section at [https://github.com/Fedict/eid-mw/tree/doc/sdk/examples doc/sdk/examples]
 
 Automatic signatures checking of the data files or validating certificates will not be done within the PKCS#11 API. 
 
@@ -33,8 +30,10 @@ Automatic signatures checking of the data files or validating certificates will 
 
 Eidmw 4.0 is compatible with SDK 3.5. A warning message about SDK 3.5 deprecation is shown to the user. Future versions of the eid middleware may drop support for SDK 3.5.<br>
 Backwards compatibility with version 3.5 of the SDK is planned in the form of an extra downloadable package from the eid.belgium.be site.<BR>
-Backwards compatibility towards version 2.x of the SDK is planned to be dropped.<BR>
+Backwards compatibility towards version 2.x of the SDK was dropped.<BR>
 Older eidmw releases will not be compatible with the 4.0 Eidmw SDK.<BR>
+
+In eidmw 4.1, support for SDK 3.5 was dropped.
 
 ==Java applet examples compatibility==
 
@@ -45,9 +44,9 @@ SDK 3.5 contains an example Java applet. This applet accesses the eid middleware
 Fedict provides and maintains a pure Java eid applet. Around the "eid-applet", other applications are built to ease integration with web based applications. We suggest users of SDK 3.5 Java to move on to this platform.
 
 More information:
-  * eid-applet (http://code.google.com/p/eid-applet/)
-  * Identifcation and authentication: eid-idp (http://code.google.com/p/eid-idp)
-  * Digital signatures: eid-dss (http://code.google.com/p/eid-dss)
+  * eid-applet (http://github.com/Fedict/eid-applet/)
+  * Identifcation and authentication: eid-idp (http://github.com/Fedict/eid-idp)
+  * Digital signatures: eid-dss (http://github.com/Fedict/eid-dss)
 
 == Test environment ==
 
@@ -57,4 +56,4 @@ There is a debugging environment that allows you to:
 * Change the signing algorithm to SHA256
 * Perform certificate status checks against a live (local) OCSP server.
 
-The debugging environment consists of two parts: a virtual card tool, and a docker image for the OCSP part and the resigning. For the latter, more information can be found at the [https://hub.docker.com/r/fedict/eid-test-ca/ docker hub]; a download site for the former will be added shortly.
+The debugging environment consists of two parts: a virtual card tool, and a docker image for the OCSP part and the resigning. For the former, please go to the [https://github.com/Fedict/eid-test-cards eid-test-cards] project; for the latter, more information can be found at the [https://hub.docker.com/r/fedict/eid-test-ca/ docker hub].
