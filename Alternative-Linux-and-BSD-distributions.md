@@ -11,6 +11,9 @@ not removed, but they are also not updated; if you run an unsupported
 version of any of these distributions, Fedict recommends upgrading as
 soon as possible.
 
+Additionally, Fedict will never support a distribution that has been
+declared EOL by the distribution itself.
+
 For other distributions, Fedict does not provide prebuilt packages nor
 support. However, some unsupported distributions do provide their own
 packaging of the official middleware:
