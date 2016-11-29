@@ -1,4 +1,4 @@
-**NOTE**: Recent versions of Google Chrome and Chromium seem to have made some changes that make the below procedure no longer work. For more details, see [[issue#9|https://github.com/Fedict/eid-mw/issues/9]].
+**NOTE**: Google Chrome and Chromium versions 46 through 53 have made some changes that make the below procedure not work. For more details, see [[issue#9|https://github.com/Fedict/eid-mw/issues/9]]. Please ensure that you have a version not in the above range (i.e., 45 or lower, or 54 or higher) before attempting this procedure.
 
 = How to enable the eID on Chrome (Linux) =
 
